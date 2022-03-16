@@ -1,0 +1,17 @@
+<section class="row justify-content-center">
+  <div class="col-md-4 mt-3">
+    <div class="input-group mb-3 col-4">
+      <span class="input-group-text" id="basic-addon1">
+        <i aria-hidden="true" class="fa fa-search mr-2"></i>
+      </span>
+      <input
+        type="search"
+        class="form-control"
+        placeholder="pesquisar..."
+        autofocus
+        (keyup)="debounce.next($event.target.value)"
+        aria-label="pesquisar"
+      />
+    </div>
+  </div>
+</section>
